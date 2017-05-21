@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.demo {
+  $container-background-color: #afa;
+  $container-border-color: #000;
+
+  $col-background-color: #aaf;
+  $col-border-color: #000;
+
+  .container {
+    background-color: $container-background-color;
+    border: 1px solid $container-border-color;
+  }
+
+  .container-fluid {
+    background-color: $container-background-color;
+    border: 1px solid $container-border-color;
+  }
+
+  .row ~ .row {
+    margin-top: 10px;
+  }
+
+  .col {
+    background-color: $col-background-color;
+    border: 1px solid $col-border-color;
+
+    min-height: 10px;
+    min-width: 10px;
+    text-align: center;
+  }
+}
